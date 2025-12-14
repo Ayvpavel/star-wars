@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Star Jedi";
+  src: url("../fonts/star-jedi.ttf");
+}
+
+body * {
+  font-family: "Star Jedi", arial;
+  text-transform: lowercase;
+}
+
+body {
+  background-color: #e2e3e5;
+  min-height: 100vh;
+  /* max-height: 100vh; */
+  overflow-y: hidden;
+  background-image: url(../images/at-st.jpg);
+}
+
+ul > li > ul > li {
+  margin-left: 30px;
+}
+
+.search {
+  display: flex;
+}
+
+#content {
+  max-height: 35vh;
+  min-height: 35vh;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.OR {
+  padding-left: 40%;
+  padding-bottom: 40px;
+  font-size: 30px;
+}
+
+.spinner {
+  visibility: hidden;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search select {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.search input {
+  flex: 1; /* растягивается как в примере */
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.search button,
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.is-5 {
+  margin-left: 270px;
+}
+.hidden{
+  display: none;
+}
+.section {
+  margin-top: 0;
+  padding-top: 0;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
